@@ -103,6 +103,7 @@ module Redox
     #     }
     #   )
     def search_patient(patient_params)
+        puts "GOT HERE"
       request_body = request_meta(
         data_model: 'PatientSearch',
         event_type: 'Query'
