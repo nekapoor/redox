@@ -30,6 +30,8 @@ module Redox
     def initialize(
       source:, destinations:, test_mode: true, token: nil, refresh_token: nil
     )
+            puts "GOT HERE INITIALIZE"
+
       if [Redox.api_key, Redox.secret].any?(&:nil?)
         raise APIKeyError
       end
